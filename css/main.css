@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Inter, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b9586;
+    padding: 1.5rem;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    position: relative; 
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    scale: 1.05;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; 
+    background-color: #1eb4a2; 
+    transition: width 0.3s ease-in-out; 
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.contact-info {
+    text-align: right;
+    color: white;
+}
+.contact-info .number{
+    font-weight: bold;
+}
+.hero {
+    background: url('../images/solar-panels-meadow\ 1.png') no-repeat center center/cover;
+    max-height: 100vh;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2em;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-buttons .call-us,
+.hero-buttons .request-call {
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.hero-buttons .call-us {
+    background-color: #0b9586;
+    color: #fff;
+}
+.hero-buttons .call-us:hover{
+    background-color: #fff;
+    color: #0b9586;
+}
+
+.hero-buttons .request-call {
+    background-color: #ffbb1c;
+    color: #283646;
+}
+.hero-buttons .request-call:hover{
+    background-color: #283646;
+    color: #ffbb1c;
+}
+
+
+
+
+.friendly-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 20px;
+    width: 80%;
+    max-height: fit-content;
+    margin: auto;
+}
+
+.friendly-content {
+    
+    max-width: 50%;
+}
+
+.friendly-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.friendly-content p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.friendly-content ul {
+    list-style: none;
+}
+
+.friendly-content ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.friendly-content ul li span {
+    color: #8bc34a;
+    font-weight: bold;
+}
+
+.friendly-image {
+    position: relative;
+}
+
+.friendly-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.friendly-note {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+    background-color: #ffbb1c;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    max-width: 50%;
+}
+
+
+
+.powers{
+    margin: auto;
+    min-height: 70vh;
+    background: url('../images/8116\ 1.png') no-repeat center center/cover;
+    position: relative;
+}
+.powers-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -55%);
+}
+.powers-content h1 {
+    font-size: 3em;
+    margin-bottom: 2.5rem;
+    color: #fff;
+}
+
+.powers-content p {
+    font-size: 1.5em;
+    margin-bottom: 1.8rem;
+    color: #fff;
+}
+
+.powers-content .request-call {
+    background-color: #ffbb1c;
+    color: #283646;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.powers-content .request-call:hover{
+    background-color: #283646;
+    color: #ffbb1c;
+}
+
+.solarKits{
+    width: 80%;
+    margin: 3rem auto;
+    background-color: #fff;
+}
+.solarKits-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.solarKits-desc{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: rgba(71, 84, 103, 1);
+}
+.solarKits-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.solarKits-card{
+    width: 31%;
+    border: 1px solid #ebebeb;
+}
+.solarKits-card img{
+    width: 100%;
+}
+.solarKits-card .img-title, .solarKits-card .img-desc, .solarKits-card .view-products{
+    margin: 20px;
+}
+.solarKits-card  .img-desc{
+    color: rgba(71, 84, 103, 1);
+}
+.solarKits-card .view-products{
+    letter-spacing: 1px;
+    color: #0b9586;
+    padding-right: 0;
+}
+.solarKits-card .view-products:hover{
+    cursor: pointer;
+}
+.solarKits-card span{
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.solarKits-card .view-products:hover span{
+    margin-left: 18px;
+}
+
+
+.repairs{
+    background: url('../images/8116\ 1\ \(1\).png') no-repeat center center/cover;
+    min-height: 60vh;
+    position: relative;
+}
+.repairs-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.849);
+    min-height: fit-content;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+}
+.repairs-title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.repairs-desc{
+    font-size: 1.5rem;
+}
+
+
+.energy{
+    background-color: #fffcf4;
+    padding-top: 3rem;
+}
+.energyContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.energy-left{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.energy-btn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #0b9586;
+    outline: 8px solid #0b958542;
+    margin-bottom: 20px;
+}
+.energy-btn i{
+    font-size: 2rem;
+    color: #fff;
+}
+.energy-title{
+    margin-bottom: 20px;
+}
+.energy-desc{
+   color:rgba(71, 84, 103, 1);
+}
+
+.energy-right{
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    justify-content: space-between;
+    align-items: center;
+}
+.energy-card{
+    padding: 20px;
+    border: 1px solid #0b9586;
+    background-color: #0b958516;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.energy-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.energy-card h4{
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.energy-card P{
+    margin: 10px 0;
+}
+.energy-card h5{
+    margin: 15px 0;
+    color: #0b9586;
+}
+.energy-card h5:hover{
+    cursor: pointer;
+}
+.energy-card i{
+    color: #0b9586;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.energy-card h5:hover i{
+    margin-left: 18px;
+}
+
+
+
+.values{
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+}
+.values-title{
+    margin-bottom: 15px;
+}
+.values-desc{
+    margin-bottom: 15px;
+}
+.values-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.values-card{
+    border: 1px solid #0b9586;
+    width: 31%;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    background-color: #f5fbf9;
+}
+
+.values-card-title, .values-card-para{
+    margin: 15px 0;
+}
+.values-card-desc{
+     color: rgba(71, 84, 103, 1);
+}
+
+
+.whatTheySay{
+    width: 80%;
+    margin: 4.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.say-left{
+    width: 30%;
+    align-self: center;
+}
+.say-left i{
+    font-size: 3rem;
+    color: #0b9586;
+    margin-bottom: 20px;
+}
+.say-title{
+    margin-bottom: 30px;
+}
+.say-desc{
+   color: rgba(71, 84, 103, 1);
+}
+.say-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #0b958516;
+    padding: 30px;
+    border-radius: 10px;
+}
+.say-right-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: #0b9586;
+    font-weight: bold;
+}
+
+.points{
+    font-size: 0.5rem;
+    line-height: 1px;
+    color: #0b9586;
+}
+.points .transparent{
+    color: #0b958536;
+}
+.say-right-foot{
+    display: flex;
+    justify-content: space-between;
+}
+.profile-info{
+    display: flex;
+}
+.profile-info img{
+    margin-right: 20px;
+}
+.name-job{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-btns i{
+    font-size: 2rem;
+    color: #0b9586;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+.profile-btns i:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.footer {
+    background-color: #283646;
+    color: #ccc;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-subscribe {
+    text-align: left;
+}
+
+.footer-subscribe p {
+    margin-bottom: 10px;
+    color: #fff ;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #596573;
+    outline: 1px solid #596573;
+    margin-right: -10px;
+    background-color: #3b4857;
+    color: #ccc;
+}
+
+.subscribe-form button {
+    background-color: #ffca28;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+.subscribe-form input:hover{
+    border: 1px solid #e6f2ff;
+    outline: 1px solid #e6f2ff;
+}
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-nav a {
+    color: #596573;
+    text-decoration: none;
+}
+.footer-bottom-nav li{
+    color: #596573;
+}
+
+.footer-bottom p {
+    color: #596573;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 1250px) {
+    .hero h1 {
+        font-size: 3em;
+    }
+
+     .friendly-content h2 {
+        font-size: 2em;
+    }
+
+    .powers-content h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+@media (max-width: 992px) {
+    header {
+        align-items: flex-start;
+        padding: 20px 20px 10px 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+.friendly-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .friendly-content {
+        max-width: 100%;
+    }
+
+    .friendly-image {
+        margin-top: 20px;
+    }
+
+    .solarKits-container, 
+    .energyContainer, 
+    .values-container, 
+    .whatTheySay {
+        gap: 20px;
+    }
+
+    .solarKits-card, 
+    .energy-left, 
+    .energy-right, 
+    .values-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .powers{
+        min-height: 100vh;
+    }
+    .powers-content {
+        transform: translate(-50%, -50%);
+    }
+    .repairs{
+        height: 100vh;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .powers-content h1 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .powers-content p{
+        font-size: 1rem;
+    }
+
+    .energy-btn, .energy-right, .values-container {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    header {
+         width:100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        gap: 10px;
+        align-items: center;
+    }
+    .contact-info{
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hero {
+        height: 50vh;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p, 
+    
+    .powers-content p, 
+    .solarKits-desc, 
+    .energy-desc, 
+    .values-card-desc, 
+    .say-desc {
+        font-size: 1em;
+    }
+
+    .hero-buttons .call-us, 
+    .hero-buttons .request-call, 
+    .powers-content .request-call {
+        padding: 8px 16px;
+        font-size: 0.8em;
+    }
+
+    .repairs-title, .say-title {
+        font-size: 2rem;
+    }
+    .powers{
+        margin: auto;
+        min-height: 50vh;
+        background: url('../images/8116\ 1.png') no-repeat center center/cover;
+        position: relative;
+    }
+    .solarKits-container, .energyContainer, .values-container, .whatTheySay{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .say-left, .say-right{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        width: 90%;
+    }
+    .say-left h2{
+        font-size: 1rem;
+    }
+    .say-right-foot{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile-btns{
+        align-self: flex-end;
+    }
+    .energy-right{
+        margin-bottom: 0;
+    }
+     .powers-content h1 {
+        font-size: 1.5em;
+    }
+
+     .energy-right h5 {
+        font-size: 1em;
+    }
+    
+    .footer{
+        padding: 30px 10px;
+    }
+    .footer-container {
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-subscribe{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .footer-subscribe p, .footer-bottom p{
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer-nav ul, .footer-bottom-nav ul{
+        flex-direction: row;
+        gap: 0;
+        font-size: 0.75rem;
+    }
+}
